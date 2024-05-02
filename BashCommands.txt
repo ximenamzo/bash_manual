@@ -1,0 +1,64 @@
+~~  IR A LA ULTIMA UBICACION	~$ cd -
+
+
+~~  CONVERTIR UNA CARPETA A UNA CARPETA COMPRIMIDA
+
+	tar -czvf mi_carpeta_comprimida.tar.gz mi_carpeta	zip -r mi_carpeta_comprimida.zip mi_carpeta
+
+
+~~  COPIAR UNA CARPETA DE UN DIRECTORIO A OTRO
+
+	cp -r /home/tuusuario/carpeta_origen /home/tuusuario/carpeta_destino
+
+
+~~  COPIAR UN ARCHIVO DE UNA CARPETA A OTRA
+
+	cp /home/tuusuario/carpeta_origen/miarchivo.txt /home/tuusuario/carpeta_destino
+
+
+~~  ABRIR VISUAL CODE DESDE LA UBICACION DE TERMINAL	~$ code .
+
+
+~~  MOVER UNA CARPETA DE UN DIRECTORIO A OTRO
+
+       EJ si quieres mover una carpeta llamada "mi_carpeta" desde el directorio de inicio (/home/tu-usuario/) a la carpeta "Documentos", el comando sería algo así:
+
+	mv -r /home/tu-usuario/mi_carpeta /home/tu-usuario/Documentos/
+
+
+~~  BORRAR UNA CARPETA CON SUBCARPETAS DENTRO
+
+	rm -r /ruta/del/directorio/nombre-de-tu-carpeta
+
+
+~~  COMO RENOMBRO UN DIRECTORIO
+
+	mv mi_directorio nuevo_directorio
+
+
+~~  BUSCAR UN ARCHIVO EN EL DIRECTORIO
+
+	sudo find / -type f -name "nombre_de_mi_archivo.txt"
+
+
+~~  DESCOMPRIMIR
+
+	unzip archivo.zip -d directorio_destino
+
+	tar -xvf archivo.tar
+
+		- `-x`: extraer archivos.
+		- `-v`: modo detallado, mostrar los archivos mientras se extraen.
+		- `-f`: especifica el nombre del archivo tar.
+
+	tar -xzvf archivo.tar.gz
+
+      Si está comprimido con bzip2, puedes usar la opción `-j`:
+
+	tar -xjvf archivo.tar.bz2
+
+~~  HISTORIAL DEL BASH
+	
+	cat .bash_history
+
+

@@ -1,0 +1,8 @@
+sudo /opt/lampp/lampp start
+
+sudo /opt/lampp/lampp stop
+
+sudo systemctl stop apache2
+
+INFINITUM4C0F_2.4
+9udD5ymFSK

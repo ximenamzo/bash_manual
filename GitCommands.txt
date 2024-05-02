@@ -1,0 +1,49 @@
+git init: Inicializa un nuevo repositorio Git en el directorio actual.
+
+git clone [URL]: Clona un repositorio remoto en tu sistema local.
+
+git add [archivo o directorio]: Añade cambios al área de preparación (staging). Por ejemplo, git add archivo.txt o git add carpeta/.
+
+git commit -m "[mensaje]": Guarda los cambios en el repositorio. El mensaje debe describir brevemente los cambios realizados.
+
+git status: Muestra el estado de los archivos en tu directorio de trabajo y el área de preparación.
+
+git log: Muestra un registro de todos los commits en la rama actual.
+
+git branch: Muestra una lista de todas las ramas locales y resalta la rama actual.
+
+git branch [nombre]: Crea una nueva rama. Ejemplo: git branch nueva-rama.
+
+git checkout [rama]: Cambia a una rama existente.
+
+git checkout -b nueva-rama: nueva rama basada en la que se está actualmente o se pone la rama en la que se quiera basar.
+
+git branch -d old-branch: borra la rama.
+
+git merge [rama]: Fusiona los cambios de una rama en la rama actual. Ejemplo: git merge otra-rama.
+
+git fetch origin main: Trae lo que hay en main
+    
+git pull: Obtiene los cambios más recientes desde el repositorio remoto.
+
+git push: Sube los cambios locales al repositorio remoto. git push -f origin nombre-rama forzará el envío.
+
+git remote -v: Muestra información sobre los repositorios remotos configurados.
+
+git fetch --all & git branch -r: Para ver las ramas en el repo remoto.
+
+git reset [archivo]: Deshace los cambios de un archivo en el área de preparación. Ejemplo: git reset archivo.txt.
+
+git stash: Guarda temporalmente los cambios sin hacer commit para que puedas cambiar de rama o hacer otras operaciones.
+
+git diff [archivo]: Muestra las diferencias entre el archivo actual y la versión en el último commit.
+
+git ls-remote --heads origin: Ver las ramas del remoto
+
+git reset --hard main: Revierte a tal y como está todo en main
+
+git revert <hash>: Revierte los cambios a ese commit.
+
+git revert -m 1 --no-commit 413cf041b55cce2ccfaebc26c59facb7d814f001
+
+git revert --continue

@@ -1,0 +1,13 @@
+utorrent: 
+	START> utserver -settingspath /opt/utorrent-server-*/ &
+
+		http://localhost:8080/gui
+
+	STOP> pkill -f utserver
+	      pgrep -f utserver
+
+
+
+tor: ./start-tor-browser.desktop
+
+
