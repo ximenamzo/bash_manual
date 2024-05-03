@@ -1,0 +1,11 @@
+# #  N O D E . J S  # #
+
+ $ npm run dev
+
+
+# #  V I T E . J S  # #
+
+ $ npm create vite@latest
+ $ cd mi-carpeta
+ $ npm install
+ $ npm run dev

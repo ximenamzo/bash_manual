@@ -1,0 +1,23 @@
+/** Dentro de la carpeta raíz del repo */
+
+$ echo "# Nombre_Repo" >> README.md
+
+$ cat README.md
+
+$ git init
+
+$ git add .
+
+$ git status
+
+$ git commit -m "first commit"
+
+# importante !!
+
+$ git branch -M main
+
+$ git remote add origin git@github.com:Usuario/Repositorio.git
+
+$ git push -u origin main
+
+
