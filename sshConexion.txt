@@ -1,0 +1,11 @@
+ssh -p 22 -L 1433:localhost:1433 ramonjimenez@148.213.117.99
+	# tunel para redirigir puertos
+
+ssh -p 22 ramonjimenez@148.213.117.99
+	# conexion remota
+
+#una vez dentro
+
+sqlcmd -S localhost -U sa -C -P "123Tamarindo@"
+> sp_databases
+> go

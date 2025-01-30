@@ -1,0 +1,11 @@
+P18= particle identify
+Your device id is 190033000947313037363132
+Your system firmware version is 3.3.1
+
+Por si falla:
+$ particle update
+$ particle flash --local tinker
+$ particle serial monitor
+
+$ particle usb start-listening
+$ particle serial wifi --file network_config.json 

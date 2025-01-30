@@ -1,0 +1,91 @@
+COMANDO BÁSICOS 
+
+$ docker ps
+	# Ver los contenedores en ejecución
+
+$ docker ps -a
+	# Ver todos los contenedores (incluidos los que están detenidos)
+
+$ docker images
+	# Listar todas las imágenes descargadas
+
+$ docker pull <imagen>
+	# Descargar una imagen de Docker Hub
+
+
+MANEJO DE CONTENEDORES
+
+$ docker run -d -p <puerto_local>:<puerto_contenedor> --name <nombre_contenedor> <imagen>
+	# Crear y ejecutar un contenedor en segundo plano con un puerto mapeado
+
+$ docker exec -it <nombre_contenedor> <comando>
+	# Ejecutar un comando dentro de un contenedor en ejecución (ej: bash para una terminal)
+
+$ docker stop <nombre_contenedor>
+	# Detener un contenedor en ejecución
+
+$ docker rm <nombre_contenedor>
+	# Eliminar un contenedor detenido
+
+
+MANEJO DE VOLUMENES
+
+$ docker volume ls
+	# Listar volúmenes creados en Docker
+
+$ docker volume rm <nombre_volumen>
+	# Eliminar un volumen específico
+
+
+DOCKER COMPOSE 
+
+$ docker-compose up -d
+	# Crear y ejecutar contenedores en segundo plano definidos en el archivo docker-compose.yml
+
+$ docker-compose down
+	# Detener y eliminar contenedores definidos en docker-compose.yml
+
+$ docker-compose down -v
+	# Detener y eliminar contenedores y volúmenes
+
+$ docker-compose ps
+	# Ver el estado de los servicios definidos en el archivo docker-compose.yml
+
+
+ACCESO Y EJECUCION EN CONTENEDORES
+
+$ docker exec -it <nombre_contenedor> bash
+	# Acceder a la terminal del contenedor en ejecución
+
+$ docker exec -it <nombre_contenedor> <comando>
+	# Ejecutar un comando específico en el contenedor (ejemplo: `psql -U usuario -d bd` para bases de datos)
+
+
+SOLUCION DE PROBLEMAS
+
+$ docker logs <nombre_contenedor>
+	# Ver los logs del contenedor (útil para depuración)
+
+$ docker inspect <nombre_contenedor>
+	# Ver detalles avanzados del contenedor (como IP, volúmenes, etc.)
+
+$ docker system prune -a
+	# Limpiar imágenes, contenedores, volúmenes y redes no utilizados (¡útil para liberar espacio!)
+
+$ docker-compose logs
+	# Ver los logs de todos los servicios gestionados por docker-compose
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

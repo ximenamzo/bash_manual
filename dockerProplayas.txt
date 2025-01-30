@@ -1,0 +1,20 @@
+docker-compose down -v
+	# remover el contenedor
+
+docker-compose up -d
+	# crear lo que hay en el yaml
+
+docker start proplayas-database-1
+	# para iniciar el contenedor
+
+symfony server:start
+	# Iniciar la API
+
+docker ps
+	# para ver si esta levantado
+
+docker exec -it proplayas4t-database-1 psql -U app -d app
+	# entrar a la base de datos del contenedor especifico
+
+symfony console doctrine:migrations:migrate
+	# ejecutar migraciones de base de datos con Symfony desde la terminal del contenedor
